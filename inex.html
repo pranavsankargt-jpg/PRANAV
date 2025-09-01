@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f8fa;
+      color: #24292e;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #24292e;
+      padding: 10px 20px;
+      color: white;
+    }
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .navbar input {
+      flex: 1;
+      padding: 5px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+    }
+    .navbar .menu {
+      margin-left: 20px;
+      display: flex;
+      gap: 15px;
+      font-size: 14px;
+    }
+    .navbar .profile {
+      margin-left: auto;
+      background: #444c56;
+      padding: 5px 10px;
+      border-radius: 50%;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 220px;
+      background: #fff;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 15px;
+      height: fit-content;
+    }
+    .sidebar h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 8px 0;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* Repo List */
+    .repos {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .repo {
+      background: #fff;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .repo h2 {
+      font-size: 18px;
+      margin: 0 0 8px;
+      color: #0969da;
+      cursor: pointer;
+    }
+    .repo p {
+      font-size: 14px;
+      margin: 0 0 5px;
+      color: #57606a;
+    }
+    .repo .tags {
+      font-size: 12px;
+      color: #57606a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">🐙 GitHub</div>
+    <input type="text" placeholder="Search or jump to...">
+    <div class="menu">
+      <div>Pull requests</div>
+      <div>Issues</div>
+      <div>Marketplace</div>
+      <div>Explore</div>
+    </div>
+    <div class="profile">👤</div>
+  </div>
+
+  <!-- Page Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Repositories</h3>
+      <ul>
+        <li>my-portfolio</li>
+        <li>whatsapp-clone</li>
+        <li>github-clone</li>
+        <li>ai-project</li>
+      </ul>
+    </div>
+
+    <!-- Repo List -->
+    <div class="repos">
+      <div class="repo">
+        <h2>my-portfolio</h2>
+        <p>🌐 My personal portfolio website.</p>
+        <div class="tags">HTML • CSS • JavaScript</div>
+      </div>
+
+      <div class="repo">
+        <h2>whatsapp-clone</h2>
+        <p>💬 A simple WhatsApp UI clone.</p>
+        <div class="tags">HTML • CSS • JS</div>
+      </div>
+
+      <div class="repo">
+        <h2>github-clone</h2>
+        <p>🐙 A GitHub-like frontend clone.</p>
+        <div class="tags">HTML • CSS</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
